@@ -356,6 +356,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
                     CameraPosition cameraPosition = CameraPosition.builder().target(userLoaction).zoom(15).bearing(0).tilt(45).build();
                     mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
+
                     mMap.addMarker(new MarkerOptions().position(userLoaction).title("Your Destination").icon(bitmapDescriptorFromVector(getApplicationContext(), R.drawable.map)));
                 }
             }
